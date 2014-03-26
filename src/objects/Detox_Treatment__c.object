@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Community_Detox_Doctor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Community Detox Doctor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Detox Treatments - Community Detox Doctor</relationshipLabel>
+        <relationshipName>Detox_Treatments1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date_for_prep_stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Date for prep stage</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_when_disengagement_occurred__c</fullName>
+        <externalId>false</externalId>
+        <label>Date when disengagement occurred</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_which_detoxification_began__c</fullName>
+        <externalId>false</externalId>
+        <label>Date which detoxification began</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Detox_Client__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Detox Client</label>
+        <referenceTo>Detox_Client__c</referenceTo>
+        <relationshipLabel>Detox Treatments</relationshipLabel>
+        <relationshipName>Detox_Treatments</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Detoxing_from__c</fullName>
+        <externalId>false</externalId>
+        <label>Detoxing from</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Methadone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Benzodiazapeines</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Z-Hypnotics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Codeine</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Has_aftercare_been_agreed__c</fullName>
+        <externalId>false</externalId>
+        <label>Has aftercare been agreed</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Has_doctor_guaranteed_user_meets_reqs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the agreed community detox doctor guaranteed that the service user meets the required mental and physical health requirements?</inlineHelpText>
+        <label>Has doctor guaranteed user meets reqs</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Has_the_service_user_had_to_increase_the__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the service user had to increase their dosage amount</inlineHelpText>
+        <label>Has user had to increase dosage amount</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Has_user_needed_to_change_detox_schedule__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the service user needed to change detoxification schedule</inlineHelpText>
+        <label>Has user needed to change detox schedule</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>If_other_issue_for_postponing_specify__c</fullName>
+        <externalId>false</externalId>
+        <label>If other issue for postponing, specify</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>If_other_issue_please_specify__c</fullName>
+        <externalId>false</externalId>
+        <label>If other issue, please specify</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>If_other_please_explain__c</fullName>
+        <externalId>false</externalId>
+        <label>If other, please explain</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_the_detox_was_postponed_state_why__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If the detox was postponed please state the reason why</inlineHelpText>
+        <label>If the detox was postponed state why</label>
+        <picklist>
+            <picklistValues>
+                <fullName>The doctor advised to stop the detox</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mental health concerns were emerging</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Using heroin and stopped</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other drug (not benzos) had to stop</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Under the influence at meetings</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missing key working appointments</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Was missing medical appointments</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Was drinking heavily and had to stop</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High dose of street benzo, had to stop</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other (health, housing, family)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>If_the_person_did_not_begin_the_detox_w__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If the person did not begin the detox, why not</inlineHelpText>
+        <label>2. If did not begin the detox, why not</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Met criteria, did not wish to continue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Did not meet criteria, not wish to cont</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recommended for inpatient detox</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Could not begin due to other factors</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>If_yes_please_give_the_reasons_for_this__c</fullName>
+        <externalId>false</externalId>
+        <label>If yes please give the reasons for this</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>If_yes_please_state_the_reasons_for_this__c</fullName>
+        <externalId>false</externalId>
+        <label>If yes please state the reasons for this</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Issues_preventing_progress__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What issues are arising for the service user that they are not progressing onto detoxification</inlineHelpText>
+        <label>Issues preventing progress</label>
+        <picklist>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mental health issues</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Doctor concerns</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unable to find prescribing doctor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Was still using heroin and stopped</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Was still using other drug, had to stop</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Under the influence at meetings</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Was missing key working appointments</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Was missing medical appointments</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Was drinking heavily and had to stop</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High dose of street benzo, had to stop</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other (health, housing, family)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Key_Worker__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Key Worker</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Detox Treatments - Key Worker</relationshipLabel>
+        <relationshipName>Detox_Treatments</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Please_state_which_residential_service_t__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please state which residential service the client is going to attend</inlineHelpText>
+        <label>Which residential service</label>
+        <picklist>
+            <picklistValues>
+                <fullName>High Park</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>St. Francis Farm</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Stage_community_detoxification_reached__c</fullName>
+        <externalId>false</externalId>
+        <label>Stage community detoxification reached</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Stage 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stage 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stage 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Weeks_since_prep_for_detox_began__c</fullName>
+        <externalId>false</externalId>
+        <label>Weeks since prep for detox began</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>What_stage_was_the_service_user_at_when__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What stage was the service user at when they disengaged from community detoxification</inlineHelpText>
+        <label>Stage the user at when disengaged</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Preparation for detoxification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Detoxification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Disengagement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Re engagement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transition to residential detoxification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed detoxification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aftercare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Which_schedule_was_chosen_for_this_detox__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Which schedule was chosen for this detoxification</inlineHelpText>
+        <label>Which schedule was chosen for this detox</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Schedule 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Schedule 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Schedule 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Will_user_remain_with_the_key_worker__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Will the service user remain with the key worker who they completed community detox with</inlineHelpText>
+        <label>Will user remain with the key worker</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>X1_The_service_user_disengaged_during__c</fullName>
+        <externalId>false</externalId>
+        <label>1. The service user disengaged during</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Assessment stage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preparatory stage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Detox stage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aftercare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Detox Treatment</label>
+    <nameField>
+        <displayFormat>DT-{000000}</displayFormat>
+        <label>Detox Treatment Ref</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Detox Treatments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

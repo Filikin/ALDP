@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Attending_mental_health_professional__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>If the individual currently attending a professional for mental health reasons please enter their contact details as a Contact and link to them here</inlineHelpText>
+        <label>Attending mental health professional</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Detox Clients (Attending mental health professional)</relationshipLabel>
+        <relationshipName>Detox_Clients_Mental_Health_Professional</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Children__c</fullName>
+        <externalId>false</externalId>
+        <label>Children</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Client_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This name will not be visible to Ana Liffey</inlineHelpText>
+        <label>Client Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clients_wants_a_Community_Detox_from__c</fullName>
+        <externalId>false</externalId>
+        <label>Clients wants a Community Detox from</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Methadone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Benzodiazapeines</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Z-Hypnotics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Codeine</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Current_Medication__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the individual presently on any medication for mental health reasons? If so please include details (what medication, dosage details)</inlineHelpText>
+        <label>Current Medication</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Date_clinical_record_completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Date clinical record completed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Birth__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Birth</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Did_they_have_any_issues_during_detox__c</fullName>
+        <externalId>false</externalId>
+        <label>Did they have any issues during detox</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GP__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>GP</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Detox Clients</relationshipLabel>
+        <relationshipName>Detox_Clients</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>History_of_seizures__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Does the service user has a history of seizures? If yes please include details</inlineHelpText>
+        <label>History of seizures</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Housing_Situation__c</fullName>
+        <externalId>false</externalId>
+        <label>Housing Situation</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1. Stable Accommodation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2. Institution(prison/residential care/halfway house)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3. Homeless</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4. Other unstable accommodation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9. Not Known</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>If_other_substance_please_state__c</fullName>
+        <externalId>false</externalId>
+        <label>If other substance, please state</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Key_Worker__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Key Worker</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Detox Clients (Key Worker)</relationshipLabel>
+        <relationshipName>Detox_Clients_Key_Worker</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Last_time_attempted_detoxification__c</fullName>
+        <externalId>false</externalId>
+        <label>Last time attempted detoxification</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Nationality__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Nationality</label>
+        <referenceTo>ecass01__Nations__c</referenceTo>
+        <relationshipLabel>Detox Clients</relationshipLabel>
+        <relationshipName>Detox_Clients</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Children__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Children</label>
+        <picklist>
+            <controllingField>Children__c</controllingField>
+            <picklistValues>
+                <fullName>0</fullName>
+                <controllingFieldValues>No</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_times_attempted_detoxification__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of times attempted detoxification</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Past_community_detox_for__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If the service user has attempted community detox in the past please state which substance it was for</inlineHelpText>
+        <label>Past community detox for</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Methadone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Benzodiazapeines</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Z-Hypnotics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Codeine</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Previous_detox_history__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous detox history</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Residential</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Out patient</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Self-detox</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Community detox</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No attempts at detoxification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Previous_mental_illness__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the individual suffered from mental illness in the past? If so please include the information (how long ago, were they on medication, is it on going, were they hospitalised?)</inlineHelpText>
+        <label>Previous mental illness</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Reasons_detoxification_did_not_work__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Reasons they feel detoxification did not work for them</inlineHelpText>
+        <label>Reasons detoxification did not work</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Substances_currently_used__c</fullName>
+        <externalId>false</externalId>
+        <label>Substances currently used</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Heroin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non prescribed Benzodiazepine</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescribed Benzodiazepine</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cocaine/Crack</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cannabis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non prescribed Zimovane</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescribed Zimovane</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alcohol</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non prescribed Methadone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescribed Methadone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mephedrone (Snow Blow)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amphetamines</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ecstasy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lsd/Acid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other sedatives</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Methamphetamines</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Withdrawal_symptoms_during_past_detox__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Withdrawal symptoms they experienced during detoxification in the past</inlineHelpText>
+        <label>Withdrawal symptoms during past detox</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>Detox Client</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Client_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>DC-{000000}</displayFormat>
+        <label>Detox Client Ref</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Detox Clients</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

@@ -1,0 +1,7 @@
+<apex:page standardController="Contact" extensions="CreateDetoxClient" showHeader="true" action="{!makeDetoxClient}">
+ {!Contact.Name}
+ {!Contact.Birthdate}
+ {!Contact.Detox_Client__c}
+  <apex:messages />
+  
+</apex:page>
